@@ -1,0 +1,99 @@
+body {
+    font-family: 'open sans', arial;
+}
+
+h1 {
+    text-align: center;
+}
+
+#first {
+    background-color: brown;
+    width: 90%;
+    /* height: 1200px;
+    here div are not compressing */
+    height: 500px;
+    /* here they are compressing */
+    margin: auto;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+    /* row is by default */
+    justify-content: space-between;
+    /* flex-start is by default */
+}
+
+#first div {
+    height: 200px;
+    width: 200px;
+}
+
+#first div:nth-of-type(2n) {
+    align-self: center;
+}
+
+#second {
+    background-color: rgb(43, 38, 38);
+    width: 90%;
+    /* height: 500px; */
+    margin: 10%;
+    margin-top: 20px;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#second div {
+    height: 200px;
+    width: 200px;
+    flex-basis: 600px;
+}
+
+#second div:nth-of-type(1) {
+    flex-grow: 1;
+}
+#second div:nth-of-type(5) {
+    flex-grow: 2;
+}
+
+#second div:nth-of-type(3) {
+    flex-shrink: 1;
+}
+
+#third {
+    background-color: brown;
+    width: 90%;
+    height: 500px;
+    margin:auto;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: flex-start;
+}
+
+#third div {
+    height: 200px;
+    width: 200px;
+    /* text-align: center; */
+}
+/* #fourth {
+    background-color: brown;
+    width: 90%;
+    height: 500px;
+    margin:auto;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#fourth div {
+    height: 200px;
+    width: 600px;
+    text-align: center;
+} */
